@@ -1,0 +1,182 @@
+// ============================================= 
+
+//  Base SCSS                
+
+// ============================================= 
+
+
+//  Import components              
+// ============================================= 
+@import "components/mixins"; 
+@import "compass/css3/inline-block";
+@import "components/variables"; 
+
+
+//  Import partials              
+// =============================================
+// @import "partials/reset";
+@import "partials/type";
+
+
+
+//  Base styles            
+// =============================================
+
+.graphic-article {
+	margin: 0 auto;
+	// padding: 0 20px;
+	max-width: 623px;
+	height: 100%;
+	// border-right: 1px solid $light-gray;
+	// border-left: 1px solid $light-gray;
+	background: white;
+	@media (min-width: $smedium) {
+		// padding: 0 20px;
+	}
+}
+
+.graphic-header {
+	position: relative;
+	margin-bottom: 10px;
+	@media (min-width: $large) {
+		// margin-bottom: em(40);
+	}
+}
+
+.graphic-title {
+	margin-bottom: 20px;
+	font-size: 48px;
+	line-height: 100%;
+	@media (min-width: $smedium) {
+		font-size: 60px;
+	}
+	@media (min-width: $large) {
+		// font-size: em(78);
+	}
+	@media (min-width: $xlarge) {
+		// font-size: em(88);
+	}
+	@media (min-width: $xxlarge) {
+		// font-size: em(100);
+	}
+}
+
+.graphic-dek {
+	margin-bottom: 5px;
+	font-weight: 600;
+	font-size: 16px;
+	font-family: "MuseoSans",Helvetica,Arial,sans-serif;
+	line-height: 120%;
+	display: block;
+}
+
+
+
+
+// BAR CHART
+
+#chart {
+	margin-bottom: 10px;
+}
+
+.body-copy {
+	margin-bottom: 20px;
+	line-height: 150%;
+	display: block;
+}
+
+.graphic-dek {
+	font-size: 20px;
+}
+
+.graphic-copy {
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 140%;
+}
+
+.graphic-container {
+	padding: 10px;
+	background-color: floralwhite;
+}
+
+.bar rect {
+    stroke: #fff;
+    shape-rendering: crispEdges;
+}
+ 
+.bar rect.background {
+    fill: #eee;
+}
+ 
+.bar {
+	.audience {
+	    fill: $bground-8;
+	}
+	&:nth-of-type(9) .audience {
+		fill: $bground-2;
+	}
+}
+
+.name {
+    font-size: 11px;
+    @media (min-width: $small) {
+		font-size: 12px;
+	}
+}
+
+.value-labels {
+	font-size: 11px;
+	fill: floralwhite;
+    @media (min-width: $smedium) {
+		font-size: 12px;
+	}
+}
+ 
+.axis line {
+    stroke: #ccc;
+    stroke-width: 1;
+}
+
+line.median {
+    stroke: #777;
+    stroke-width: 1;
+}
+
+.tick text {
+	font-size: 11px;
+	fill: $med-gray;
+	@media (min-width: $small) {
+		font-size: 12px;
+	}
+}
+
+.domain { 
+  fill: none; 
+  stroke: $med-gray; 
+  stroke-width: 1; 
+} 
+
+.event-year {
+	fill: $med-gray;
+}
+
+.sources-copy {
+	display: block;
+	margin-bottom: 5px;
+	padding-top: 10px;
+	border-top: 1px solid $med-gray;
+	color: $med-gray;
+	text-align: left;
+	font-size: 11px;
+	line-height: 130%;
+	@media (min-width: $small) {
+		font-size: 12px;
+	}
+}
+
+
+
+
+
+

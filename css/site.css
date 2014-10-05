@@ -1,0 +1,407 @@
+/* line 770, ../sass/components/_mixins.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  position: static;
+  overflow: visible;
+  clip: auto;
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+
+/* !============================================= */
+/* ! Variables                      */
+/* !============================================= */
+/* !-- Universal ------------------------------------ */
+/* !-- Project ------------------------------------ */
+/* !-- Paths ------------------------------------ */
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "FCKaiserCond";
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-medium-webfont.eot");
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-medium-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-medium-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-medium-webfont.ttf") format("truetype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-medium-webfont.svg#FCKaiserCond") format("svg");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCKaiserCond";
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-regular-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-regular-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-regular-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-regular-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCKaiserCond";
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-extralight-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-extralight-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-extralight-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_cond-extralight-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCKaiserXCond";
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-extralight-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-extralight-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-extralight-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-extralight-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCKaiserXCond";
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-regular-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-regular-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-regular-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser_xcond-regular-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSans";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-regular-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-regular-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-regular-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-regular-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSans";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-medium-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-medium-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-medium-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-medium-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSans";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-bold-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-bold-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-bold-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_sans-bold-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSlab";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-thin-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-thin-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-thin-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-thin-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSlab";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-light-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-light-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-light-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-light-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSlab";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-regular-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-regular-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-regular-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-regular-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSlab";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-medium-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-medium-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-medium-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-medium-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSlab";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-bold-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-bold-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-bold-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-bold-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCZizouSlab";
+  src: url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-black-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-black-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-black-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fczizou/fczizou_slab-black-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCKaiser";
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-regular-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-regular-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-regular-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-regular-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "FCKaiser";
+  src: url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-medium-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-medium-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-medium-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/fckaiser/fckaiser-medium-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "MuseoSans";
+  src: url("http://www.fastcodesign.com/fonts/museosans/museosans-100-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/museosans/museosans-100-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/museosans/museosans-100-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/museosans/museosans-100-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "MuseoSans";
+  src: url("http://www.fastcodesign.com/fonts/museosans/museosans-300-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/museosans/museosans-300-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/museosans/museosans-300-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/museosans/museosans-300-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "MuseoSans";
+  src: url("http://www.fastcodesign.com/fonts/museosans/museosans-500-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/museosans/museosans-500-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/museosans/museosans-500-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/museosans/museosans-500-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "MuseoSans";
+  src: url("http://www.fastcodesign.com/fonts/museosans/museosans-700-webfont.eot?") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/museosans/museosans-700-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/museosans/museosans-700-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/museosans/museosans-700-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "Grumpy-Black36";
+  src: url("http://www.fastcodesign.com/fonts/grumpy/grumpy-black36-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.fastcodesign.com/fonts/grumpy/grumpy-black36-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/grumpy/grumpy-black36-webfont.svg") format("svg"), url("http://www.fastcodesign.com/fonts/grumpy/grumpy-black36-webfont.ttf") format("opentype");
+}
+
+@font-face {
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: "CaslonFS";
+  src: url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold-webfont.eot?#iefix") format("eot"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold-webfont.ttf") format("truetype"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold-webfont.svg#webfontKSc4AWhd") format("svg");
+}
+
+@font-face {
+  font-weight: 600;
+  font-style: italic;
+  font-family: "CaslonFS";
+  src: url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold_italic-webfont.eot?#iefix") format("eot"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold_italic-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold_italic-webfont.ttf") format("truetype"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-bold_italic-webfont.svg#webfontqJplC6D8") format("svg");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "CaslonFS";
+  src: url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book-webfont.eot?#iefix") format("eot"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book-webfont.ttf") format("truetype"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book-webfont.svg#webfontla9WkFWh") format("svg");
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: italic;
+  font-family: "CaslonFS";
+  src: url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book_italic-webfont.eot?#iefix") format("eot"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book_italic-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book_italic-webfont.ttf") format("truetype"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-book_italic-webfont.svg#webfont2p2hqYg5") format("svg");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "CaslonFS";
+  src: url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium-webfont.eot?#iefix") format("eot"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium-webfont.ttf") format("truetype"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium-webfont.svg#webfontsq83qGc8") format("svg");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: italic;
+  font-family: "CaslonFS";
+  src: url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium_italic-webfont.eot?#iefix") format("eot"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium_italic-webfont.woff") format("woff"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium_italic-webfont.ttf") format("truetype"), url("http://www.fastcodesign.com/fonts/caslonfs/caslonfs-medium_italic-webfont.svg#webfontydPYhPC6") format("svg");
+}
+
+/* line 201, ../sass/partials/_type.scss */
+.graphic-article {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  font-family: "MuseoSans", Helvetica, Arial, sans-serif;
+}
+
+/* line 209, ../sass/partials/_type.scss */
+.graphic-article h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "FCKaiserCond", Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 25, ../sass/site.scss */
+.graphic-article {
+  margin: 0 auto;
+  max-width: 623px;
+  height: 100%;
+  background: white;
+}
+
+/* line 38, ../sass/site.scss */
+.graphic-header {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+/* line 46, ../sass/site.scss */
+.graphic-title {
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 100%;
+}
+@media (min-width: 680px) {
+  /* line 46, ../sass/site.scss */
+  .graphic-title {
+    font-size: 60px;
+  }
+}
+
+/* line 64, ../sass/site.scss */
+.graphic-dek {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "MuseoSans",Helvetica,Arial,sans-serif;
+  line-height: 120%;
+}
+
+/* line 78, ../sass/site.scss */
+#chart {
+  margin-bottom: 10px;
+}
+
+/* line 82, ../sass/site.scss */
+.body-copy {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 150%;
+}
+
+/* line 88, ../sass/site.scss */
+.graphic-dek {
+  font-size: 20px;
+}
+
+/* line 92, ../sass/site.scss */
+.graphic-copy {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+/* line 98, ../sass/site.scss */
+.graphic-container {
+  padding: 10px;
+  background-color: floralwhite;
+}
+
+/* line 103, ../sass/site.scss */
+.bar rect {
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+/* line 108, ../sass/site.scss */
+.bar rect.background {
+  fill: #eee;
+}
+
+/* line 113, ../sass/site.scss */
+.bar .audience {
+  fill: #b681ff;
+}
+/* line 116, ../sass/site.scss */
+.bar:nth-of-type(9) .audience {
+  fill: #ffb581;
+}
+
+/* line 121, ../sass/site.scss */
+.name {
+  font-size: 11px;
+}
+@media (min-width: 400px) {
+  /* line 121, ../sass/site.scss */
+  .name {
+    font-size: 12px;
+  }
+}
+
+/* line 128, ../sass/site.scss */
+.value-labels {
+  font-size: 11px;
+  fill: floralwhite;
+}
+@media (min-width: 680px) {
+  /* line 128, ../sass/site.scss */
+  .value-labels {
+    font-size: 12px;
+  }
+}
+
+/* line 136, ../sass/site.scss */
+.axis line {
+  stroke: #ccc;
+  stroke-width: 1;
+}
+
+/* line 141, ../sass/site.scss */
+line.median {
+  stroke: #777;
+  stroke-width: 1;
+}
+
+/* line 146, ../sass/site.scss */
+.tick text {
+  font-size: 11px;
+  fill: #999999;
+}
+@media (min-width: 400px) {
+  /* line 146, ../sass/site.scss */
+  .tick text {
+    font-size: 12px;
+  }
+}
+
+/* line 154, ../sass/site.scss */
+.domain {
+  fill: none;
+  stroke: #999999;
+  stroke-width: 1;
+}
+
+/* line 160, ../sass/site.scss */
+.event-year {
+  fill: #999999;
+}
+
+/* line 164, ../sass/site.scss */
+.sources-copy {
+  display: block;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  border-top: 1px solid #999999;
+  color: #999999;
+  text-align: left;
+  font-size: 11px;
+  line-height: 130%;
+}
+@media (min-width: 400px) {
+  /* line 164, ../sass/site.scss */
+  .sources-copy {
+    font-size: 12px;
+  }
+}
